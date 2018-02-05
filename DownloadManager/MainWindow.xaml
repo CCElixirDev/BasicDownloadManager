@@ -1,0 +1,28 @@
+﻿<Window x:Class="DownloadManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DownloadManager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="345*"/>
+			<ColumnDefinition Width="172*"/>
+		</Grid.ColumnDefinitions>
+		<TextBox x:Name="DirectoryDisplay" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="335" Margin="10,286,0,0" IsEnabled="False" TextChanged="DirectoryDisplay_TextChanged" Initialized="DirectoryDisplay_Initialized"/>
+		<ToolBar x:Name="ToolStrip" HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="517" Grid.ColumnSpan="2">
+			<Button x:Name="AddUrlBtn" Height="47" VerticalAlignment="Top" Width="65" Click="AddUrlBtn_Click">
+				<Image Source="img/AddUrl.png"></Image>
+			</Button>
+			<Button Height="47" VerticalAlignment="Top" Width="65">
+				<Image Source="img/SettingsIcon.png"></Image>
+			</Button>
+		</ToolBar>
+		<Grid Margin="0,52,0,38">
+			
+		</Grid>
+
+	</Grid>
+</Window>
